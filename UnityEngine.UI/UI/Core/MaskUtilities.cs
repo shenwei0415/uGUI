@@ -88,6 +88,7 @@ namespace UnityEngine.UI
             var components = ListPool<Mask>.Get();
             while (t != null)
             {
+                components.Clear();
                 t.GetComponents<Mask>(components);
                 for (var i = 0; i < components.Count; ++i)
                 {
